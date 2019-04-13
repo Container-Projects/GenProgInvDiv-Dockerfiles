@@ -56,10 +56,10 @@ RUN apt-get install -y software-properties-common \
 && apt-get install -y openjdk-7-jdk 
 ENV JAVA7_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
+RUN chown -R user /home/user/
+
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 555 /entrypoint.sh
-
-RUN chown -R user /home/user/
 
 USER user
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-source /daikon-5.7.2/scripts/daikon.bashrc
+source ${DAIKONDIR}/scripts/daikon.bashrc
 
 cd
 git clone --single-branch --branch mutation-testing-with-invariants https://github.com/squaresLab/genprog4java.git \
