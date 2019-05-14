@@ -14,7 +14,7 @@ git clone --single-branch --branch patch-diversity-evaluation https://github.com
 && mvn package
 
 cd
-git clone https://github.com/squaresLab/GenProgInvDiv-IntroClassJava-Scripts.git IntroClassScripts
+git clone --single-branch --branch whitebox-only https://github.com/squaresLab/GenProgInvDiv-IntroClassJava-Scripts.git IntroClassScripts
 #&& cd IntroClassScripts
 #&& bash preprocessIntroClassJava.sh ${ICJ_HOME}
 exec "$@"
