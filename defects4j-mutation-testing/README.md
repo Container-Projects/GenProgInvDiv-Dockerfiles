@@ -8,7 +8,6 @@
 3. `bash runGenProg.sh PROJECT BUGNUM`
     - PROJECT is the project name of the Defects4J bug to test (e.g: Lang, Math)
     - BUGNUM is the bug number of the Defects4J bug to test
-    - LOGFILE is a filename for where to
     - e.g: `bash runGenProg.sh Math 30`
     - If running in the background for an extended period of time, I suggest using `nohup` to prevent interruptions.
         - `nohup bash runGenProg.sh PROJECT BUGNUM >& LOGOUTPUT &
