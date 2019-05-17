@@ -32,3 +32,7 @@
         - `Failing positive tests:`
         - `Failing negative tests:`
         - `Invariant profile:` either `null` or an array of values n = 0 | 1 | 2.
+
+# Todos:
+- We are currently inferring invariants by sampling n tests, partitioning the sample into partitions of size k, and running Daikon n/k times. To reduce the number of program executions, do a one-pass run to collect program traces, then partition the traces before sending them to Daikon's back end analyzer.
+- We are inferring a massive amount of invariants. I suspect that instrumentation of variant programs is taking forever (in the order of minutes). Consider invariant filtering.
